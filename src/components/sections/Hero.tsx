@@ -56,13 +56,12 @@ export const Hero: React.FC<HeroProps> = ({ isReady = true }) => {
                 <ArrowDown size={14} />
               </Button>
               <Button
-                href="https://designangle.xyz"
-                isExternal
+                href="#contact"
                 variant="secondary"
                 theme="dark"
                 className="px-5 py-2.5 text-xs sm:text-sm"
               >
-                <span>DesignAngle Agency</span>
+                <span>Get in Touch</span>
                 <ArrowUpRight size={14} />
               </Button>
             </div>

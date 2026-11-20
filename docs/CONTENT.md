@@ -52,7 +52,7 @@
 
 - **Call-to-Action Buttons (Visible above the fold at 1280x600):**
   - **Button 1 (Primary Pill):** `Explore Projects ↓` (Smooth scroll to `#projects`)
-  - **Button 2 (Secondary Ghost Pill):** `DesignAngle Agency ↗` (Opens `https://designangle.xyz` in new tab)
+  - **Button 2 (Secondary Ghost Pill):** `Get in Touch ↗` (Smooth scroll to `#contact`)
 
 - **Hero Portrait:**
   - Image Path: `/public/images/nafiz.png` (Purple studio backdrop portrait).
@@ -60,9 +60,8 @@
 
 - **Three Honest Stat-Style Facts:**  
   1. `01` `Live platform:` **RoktoFinder**
-  2. `01` `In development:` **JaniBD**
-  3. `DL` `Learning:` **Deep Learning**  
-  *(DesignAngle is an agency, not a platform in progress. Zero unmatched parentheses).*
+  2. `02` `In development:` **JaniBD & Global SaaS**
+  3. `DL` `Learning:` **Deep Learning**
 
 ---
 
@@ -124,17 +123,16 @@
 
 ---
 
-### Project 3: DesignAngle
-- **Status Badge:** `✦ Agency`
-- **Live URL:** `https://designangle.xyz`
-- **Title:** `DesignAngle`
-- **Subtitle / Category:** `Web design and development agency`
+### Project 3: Global SaaS Product
+- **Status Badge:** `✦ In development`
+- **Title:** `Global SaaS Product`
+- **Subtitle / Category:** `In-development international SaaS platform`
 - **App-Icon Floating Tile:**
-  - Temporary Monogram Tile featuring bold **"DA"** in `#a566ff` on dark squircle.
+  - Monogram Tile featuring bold **"GS"** in brand colors.
 - **Core Narrative:**  
-  > "My web design and development agency. We build clean, high-performance web applications and digital interfaces for businesses and founders."
-- **Tech Stack Badges:** `Web Design`, `Frontend Development`, `Next.js`, `Design Systems`
-- **Primary CTA:** `Visit Agency ↗` (`https://designangle.xyz`)
+  > "An international SaaS platform currently in active development. Built with modern full-stack architecture, focusing on high reliability, clean workflows, and global scalability. Official name and details to be announced."
+- **Tech Stack Badges:** `SaaS Architecture`, `Full-Stack`, `Global Platform`, `In Active Development`
+- **Status Indicator:** `Active Build Running — Official Launch Forthcoming`
 
 ---
 
@@ -154,9 +152,9 @@
    - Status: `Solidified`
    - Details: Building full-stack web applications, component systems, and community tools. Founded RoktoFinder and JaniBD.
 
-2. **Phase 02: DesignAngle Agency Leadership**
-   - Status: `Active agency`
-   - Details: Founded DesignAngle to deliver client-focused web development, responsive interfaces, and custom digital systems.
+2. **Phase 02: SaaS Engineering & System Architecture**
+   - Status: `Active build`
+   - Details: Engineering scalable SaaS architectures and full-stack web platforms, currently building an international SaaS product alongside community tools.
 
 3. **Phase 03: Python & Machine Learning Fundamentals**
    - Status: `Complete`
@@ -197,7 +195,7 @@
 | **Roadmap** | NLP, Computer Vision, GenAI, Transformers, AI Agents | Planned |
 | **Live Platform** | RoktoFinder (roktofinder.com) | Live |
 | **In Development** | JaniBD (Bangla-first SaaS companion) | In dev |
-| **Agency** | DesignAngle (designangle.xyz) | Active |
+| **Upcoming SaaS** | Global SaaS (in development) | In dev |
 | **Domain** | muhammadnafiz.dev | Official |
 | **Language** | English only (Portfolio) | Standard |
 
@@ -219,7 +217,6 @@
   2. **LinkedIn:** `https://www.linkedin.com/in/nafiz-ai/` (`linkedin.com/in/nafiz-ai`)
   3. **Email:** `mailto:me@muhammadnafiz.dev` (`me@muhammadnafiz.dev`)
   4. **X (Twitter):** `https://x.com/MUHAMMADNA70418` (`x.com/MUHAMMADNA70418`)
-  5. **DesignAngle:** `https://designangle.xyz` (`designangle.xyz`)
 
 ---
 

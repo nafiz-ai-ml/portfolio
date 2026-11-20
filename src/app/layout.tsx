@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     'Bangladesh',
     'RoktoFinder',
     'JaniBD',
-    'DesignAngle',
+    'SaaS',
     'Next.js Portfolio',
   ],
   authors: [{ name: siteConfig.name, url: `https://${siteConfig.domain}` }],

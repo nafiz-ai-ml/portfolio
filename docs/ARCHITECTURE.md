@@ -66,7 +66,7 @@ muhammad-nafiz-portfolio/
 │   │       ├── Preloader.tsx       # MN Monogram intro curtain
 │   │       ├── Hero.tsx            # Headline, CTA, stats, portrait
 │   │       ├── Marquee.tsx         # Tech stack infinite ticker
-│   │       ├── Projects.tsx        # RoktoFinder, JaniBD, DesignAngle + Icon Tiles
+│   │       ├── Projects.tsx        # RoktoFinder, JaniBD, Global SaaS + Icon Tiles
 │   │       ├── Journey.tsx         # Pinned milestone timeline + scrubbed intro text
 │   │       ├── About.tsx           # Scrubbed statement + verified fact matrix
 │   │       └── Contact.tsx         # Editorial "Say hello" + social rows
@@ -238,7 +238,7 @@ useEffect(() => {
 - **Title:** `Muhammad Nafiz — Web Developer & Aspiring AI Engineer`
 - **Description:** `Portfolio of Muhammad Nafiz, web application developer and founder based in Mymensingh, Bangladesh. Building RoktoFinder, JaniBD, and mastering Deep Learning.`
 - **Canonical URL:** `https://muhammadnafiz.dev`
-- **Keywords:** `Muhammad Nafiz, Web Developer Bangladesh, AI Engineer, Deep Learning, RoktoFinder, JaniBD, DesignAngle, Mymensingh Developer, Next.js Portfolio`
+- **Keywords:** `Muhammad Nafiz, Web Developer Bangladesh, AI Engineer, Deep Learning, RoktoFinder, JaniBD, Global SaaS, Mymensingh Developer, Next.js Portfolio`
 
 ### 6.2 Dynamic OpenGraph Card (`src/app/opengraph-image.tsx`)
 Using `@vercel/og` Edge runtime:

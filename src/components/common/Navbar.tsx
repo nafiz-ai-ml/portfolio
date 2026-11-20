@@ -2,21 +2,39 @@
 
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
+import { Search, Terminal, Volume2, VolumeX } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Magnet } from '@/components/animation/Magnet';
+import { sound } from '@/lib/audio';
 
 // Real section ids in the real page order
 const navItems = [
   { label: 'Stack', href: '#stack', id: 'stack' },
   { label: 'Projects', href: '#projects', id: 'projects' },
   { label: 'Journey', href: '#journey', id: 'journey' },
+  { label: 'AI Lab', href: '#ai-lab', id: 'ai-lab' },
   { label: 'About', href: '#about', id: 'about' },
 ];
 
-export const Navbar: React.FC = () => {
+interface NavbarProps {
+  onOpenCommandPalette?: () => void;
+  onOpenTerminal?: () => void;
+  onOpenResume?: () => void;
+}
+
+export const Navbar: React.FC<NavbarProps> = ({
+  onOpenCommandPalette,
+  onOpenTerminal,
+  onOpenResume,
+}) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [theme, setTheme] = useState<'dark' | 'light'>('dark');
   const [activeSection, setActiveSection] = useState<string>('');
+  const [isAudioOn, setIsAudioOn] = useState(false);
+
+  useEffect(() => {
+    setIsAudioOn(sound.getEnabled());
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -162,14 +180,76 @@ export const Navbar: React.FC = () => {
           })}
         </nav>
 
-        {/* Contact CTA Button (Present on both mobile & desktop) */}
-        <div className="flex items-center">
+        {/* Actions Cluster: Cmd+K, Audio, Terminal & Connect */}
+        <div className="flex items-center gap-2 sm:gap-2.5">
+          {/* Cmd+K Palette Trigger */}
+          <button
+            type="button"
+            onClick={() => {
+              sound.playTick();
+              onOpenCommandPalette?.();
+            }}
+            className={cn(
+              'inline-flex items-center gap-1.5 px-2.5 sm:px-3 py-1.5 rounded-full text-xs font-mono transition-all duration-300 border shadow-sm',
+              isLight
+                ? 'bg-white/90 text-light-muted border-light-border hover:text-light-text hover:border-brand/40'
+                : 'bg-dark-surface/90 text-dark-muted border-dark-border hover:text-dark-text hover:border-brand-tint/40'
+            )}
+            aria-label="Open Command Palette"
+          >
+            <Search size={13} className="text-brand-tint" />
+            <span className="hidden sm:inline font-bold text-[11px]">⌘K</span>
+          </button>
+
+          {/* Sound FX Toggle */}
+          <button
+            type="button"
+            onClick={() => {
+              const next = sound.toggle();
+              setIsAudioOn(next);
+            }}
+            className={cn(
+              'p-2 rounded-full text-xs transition-all duration-300 border shadow-sm',
+              isLight
+                ? 'bg-white/90 text-light-muted border-light-border hover:text-light-text'
+                : 'bg-dark-surface/90 text-dark-muted border-dark-border hover:text-dark-text'
+            )}
+            aria-label={isAudioOn ? 'Mute sound' : 'Enable sound'}
+            title={isAudioOn ? 'Sound FX Enabled (Click to mute)' : 'Sound FX Muted (Click to enable)'}
+          >
+            {isAudioOn ? (
+              <Volume2 size={13} className="text-emerald-400" />
+            ) : (
+              <VolumeX size={13} />
+            )}
+          </button>
+
+          {/* Terminal Trigger */}
+          <button
+            type="button"
+            onClick={() => {
+              sound.playTick();
+              onOpenTerminal?.();
+            }}
+            className={cn(
+              'hidden md:inline-flex p-2 rounded-full text-xs transition-all duration-300 border shadow-sm',
+              isLight
+                ? 'bg-white/90 text-light-muted border-light-border hover:text-light-text'
+                : 'bg-dark-surface/90 text-dark-muted border-dark-border hover:text-dark-text'
+            )}
+            aria-label="Open Terminal"
+            title="Open CLI Terminal"
+          >
+            <Terminal size={13} />
+          </button>
+
+          {/* Contact CTA Button (Present on both mobile & desktop) */}
           <Magnet strength={0.25}>
             <a
               href="#contact"
               onClick={(e) => handleSmoothScroll(e, '#contact')}
               className={cn(
-                'inline-flex items-center gap-1.5 px-4 sm:px-5 py-2 rounded-full text-xs font-semibold tracking-wider uppercase font-mono transition-all duration-300 shadow-md',
+                'inline-flex items-center gap-1.5 px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs font-semibold tracking-wider uppercase font-mono transition-all duration-300 shadow-md',
                 isLight
                   ? 'bg-light-text text-white hover:bg-brand'
                   : 'bg-brand-tint text-dark-bg hover:bg-white hover:shadow-brand-tint/25'

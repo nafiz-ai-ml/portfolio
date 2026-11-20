@@ -1,11 +1,25 @@
 'use client';
 
 import React from 'react';
-import { ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight, Copy, Check } from 'lucide-react';
 import { siteConfig } from '@/data/site';
-import { SectionHeader } from '@/components/common/SectionHeader';
+import { useToast } from '@/context/ToastContext';
+import { sound } from '@/lib/audio';
 
 export const Contact: React.FC = () => {
+  const { showToast } = useToast();
+  const [copied, setCopied] = React.useState(false);
+
+  const handleCopyEmail = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    navigator.clipboard.writeText('me@muhammadnafiz.dev');
+    setCopied(true);
+    sound.playSuccess();
+    showToast('Copied me@muhammadnafiz.dev to clipboard!');
+    setTimeout(() => setCopied(false), 2000);
+  };
+
   return (
     <section
       id="contact"
@@ -29,6 +43,30 @@ export const Contact: React.FC = () => {
           <p className="mt-4 text-base sm:text-lg text-dark-muted max-w-xl font-sans">
             Always open to discussing web application architecture, deep learning discoveries, collaboration opportunities, or community initiatives.
           </p>
+
+          {/* 1-Click Copy Email Pill */}
+          <div className="mt-6 flex items-center gap-3">
+            <button
+              type="button"
+              onClick={handleCopyEmail}
+              className="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-brand/20 border border-brand/40 text-brand-tint hover:bg-brand hover:text-white font-mono text-xs font-semibold tracking-wider transition-all shadow-md group"
+            >
+              {copied ? (
+                <>
+                  <Check size={14} className="text-emerald-400" />
+                  <span>Copied to Clipboard!</span>
+                </>
+              ) : (
+                <>
+                  <Copy size={14} className="transition-transform group-hover:scale-110" />
+                  <span>Copy me@muhammadnafiz.dev</span>
+                </>
+              )}
+            </button>
+            <span className="font-mono text-xs text-dark-muted hidden sm:inline">
+              1-click direct copy
+            </span>
+          </div>
         </div>
 
         {/* Social Link Rows (Strictly no contact form) */}
@@ -66,4 +104,3 @@ export const Contact: React.FC = () => {
     </section>
   );
 };
-

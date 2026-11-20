@@ -51,11 +51,11 @@
 - [x] Create `src/types/index.ts` declaring types for Social, Project, ProjectIcon, Milestone, and Fact items.
 - [x] Author `src/data/site.ts` with complete data from `CONTENT.md`:
   - Profile metadata (Name, Location, Taglines).
-  - Centralized project logo configuration (RoktoFinder image path, JaniBD monogram "JB", DesignAngle monogram "DA").
-  - Social accounts (GitHub, LinkedIn, Facebook, X, DesignAngle).
+  - Centralized project logo configuration (RoktoFinder image path, JaniBD real logo path, Global SaaS monogram "GS").
+  - Social accounts (GitHub, LinkedIn, Email, X).
   - 3 Honest Stat metrics (`01`, `02`, `DL`).
   - Marquee tech stack array.
-  - 3 Projects (RoktoFinder [Live], JaniBD [In Development], DesignAngle [Agency]).
+  - 3 Projects (RoktoFinder [Live], JaniBD [In Development], Global SaaS [In Development]).
   - 5 Journey milestones (Founding to AI Horizon) + scrubbed statement text.
   - About statement text + 10+ Fact table records.
 
@@ -111,13 +111,14 @@
   - Ambient floating bob animation (`translateY(-5px)` to `+5px`).
   - Hover micro-tilt and scale ($1.06\times$).
   - RoktoFinder tile: rendered on off-white or dark tile (never red background).
-  - JaniBD & DesignAngle tiles: rendered with monograms "JB" and "DA".
+  - JaniBD: rendered with real logo image (`/images/projects/janibd-logo.png`).
+  - Global SaaS: rendered with monogram "GS".
   - Icon source loaded dynamically from `site.ts`.
 - [x] Build `src/components/animation/TiltCard.tsx` (3D perspective tilt + cursor radial glow).
 - [x] Build `src/components/sections/Projects.tsx`:
   - **RoktoFinder Card:** Floating icon tile, live badge, community origin note, feature pills, live URL button, parallax screenshot gallery.
-  - **JaniBD Card:** Floating monogram tile, in-development badge, tagline, module breakdown, interactive preview card.
-  - **DesignAngle Card:** Floating monogram tile, agency badge, services summary, outbound link.
+  - **JaniBD Card:** Floating real logo tile, in-development badge, tagline, module breakdown, real logo preview card.
+  - **Global SaaS Card:** Floating monogram tile, in-development badge, architectural highlights, stealth build card.
 
 ---
 
@@ -145,7 +146,7 @@
 - [x] Apply reciprocal slanted clip-path transition returning background from light to dark `#0c0a12`.
 - [x] Build `src/components/sections/Contact.tsx`:
   - Display headline: *"Say hello."* (*hello.* in Instrument Serif Italic `#a566ff`).
-  - Full-width interactive link rows for GitHub, LinkedIn, Facebook, X, and DesignAngle.
+  - Full-width interactive link rows for GitHub, LinkedIn, Email, and X.
   - Hover micro-interactions: arrow rotation/translation and row background highlight.
 
 ---

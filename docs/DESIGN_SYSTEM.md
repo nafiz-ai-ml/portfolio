@@ -101,7 +101,8 @@ Monitors `['hero', 'stack', 'projects', 'journey', 'about', 'contact']` with `ro
 - **Curvature:** `rounded-3xl` ($24\text{px}$ radius).
 - **Rest Angle:** `-5deg` rotation with soft ambient float ($\pm 5\text{px}$).
 - **RoktoFinder Tile:** Off-white (`#ffffff`) or dark (`#14101c`) container with droplet mark. **Never red background.**
-- **JaniBD / DesignAngle:** Monogram squircle tiles with `"JB"` and `"DA"` in brand colors.
+- **JaniBD:** Real logo tile (`/images/projects/janibd-logo.png`).
+- **Global SaaS:** Monogram squircle tile with `"GS"` in brand colors.
 - Paths managed centrally in `src/data/site.ts`.
 
 ---

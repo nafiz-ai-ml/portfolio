@@ -140,7 +140,8 @@
 - Idle: Ambient continuous floating bob ($\pm 5\text{px}$).
 - Hover: Straightens towards `rotate(-1deg)`, scales $1.06\times$.
 - RoktoFinder: Off-white tile with red droplet logo (never red background).
-- JaniBD / DesignAngle: Monograms `"JB"` and `"DA"`. |
+- JaniBD: Real logo tile (`/images/projects/janibd-logo.png`).
+- Global SaaS: Monogram tile `"GS"`. |
 | **Library** | CSS `@keyframes float` + Framer Motion hover. |
 | **Reduced-Motion Fallback** | Static squircle tile at `rotate(-5deg)` without float animation. |
 

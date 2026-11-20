@@ -17,7 +17,7 @@ The personal portfolio for **Muhammad Nafiz (মুহাম্মদ নাফ�
 2. **Flagship Proof:** Highlight three primary initiatives with complete factual integrity:
    - **RoktoFinder** (Live community platform saving lives in Mymensingh).
    - **JaniBD** (Flagship SaaS platform in active development).
-   - **DesignAngle** (Web design and development agency).
+   - **Global SaaS** (International SaaS platform in active development).
 3. **Creative Engineering Standard:** Deliver an elite, high-performance web experience inspired by the motion and visual rhythm of benchmark sites (dark premium aesthetic, block-grid reveal, dark-to-light transitions, interactive pinned timeline, and silky Lenis + GSAP orchestration) without copying assets, text, or identity.
 4. **Zero Fabrication:** Maintain uncompromising credibility. Present only verifiable facts; never invent metrics, awards, press coverage, or client testimonials.
 
@@ -26,7 +26,7 @@ The personal portfolio for **Muhammad Nafiz (মুহাম্মদ নাফ�
 ## 2. Target Audience & Stakeholders
 
 1. **AI & Tech Recruiters / Engineering Leads:** Assessing technical rigor, engineering depth, mastery of modern web architecture, and commitment to Deep Learning fundamentals.
-2. **Potential Agency Clients & Partners (DesignAngle):** Evaluating execution capability, interface polish, reliability, and product-focused delivery.
+2. **Potential Collaborators & Partners:** Evaluating execution capability, interface polish, reliability, and product-focused delivery.
 3. **Tech Community & Collaborators:** Developers, open-source contributors, and community leaders in Bangladesh and internationally who value genuine problem-solving.
 
 ---
@@ -67,7 +67,7 @@ flowchart TD
    - Hero Portrait: Purple studio background portrait (`/public/images/nafiz.png`) unveiled via a block-grid tile reveal transitioning from grayscale to full saturation.
    - Fact / Stats Bar: 3 honest, non-fabricated stat items.
 3. **Tech Stack Marquee (Dark):** Continuous marquee ticker labeled `BUILT WITH`, highlighting real production tools (TypeScript, Next.js, Python, PyTorch, Tailwind CSS, etc.) with hover-pause.
-4. **Selected Projects (Light):** Smooth GSAP scroll-driven background transition into light surface `#f8f7fc`. Detailed cards with 3D tilt, parallax screenshot showcase, and magnetic outbound links for RoktoFinder, JaniBD, and DesignAngle.
+4. **Selected Projects (Light):** Smooth GSAP scroll-driven background transition into light surface `#f8f7fc`. Detailed cards with 3D tilt, parallax screenshot showcase, and magnetic outbound links for RoktoFinder, JaniBD, and Global SaaS.
 5. **Engineering Journey (Light):** Pinned multi-phase interactive timeline tracking Nafiz's journey from web development & founding to Deep Learning and the future of AI Agents.
 6. **About & Fact Matrix (Light):** Concise founder bio coupled with an explicit, high-density tabular breakdown of technical proficiencies, current coursework, and regional background.
 7. **Contact / Let's Connect (Dark):** Dynamic transition back to dark `#0c0a12`. Striking editorial headline (*"Say hello."*), and large interactive row links for all social channels.
@@ -85,7 +85,7 @@ To protect credibility, all contributors and future modifications must strictly 
 2. **Project Facts Only:**
    - **RoktoFinder:** Bangla-first blood donor platform for Mymensingh. Started as a community initiative with Al Fatih Islamic Pathagar. Features: donor lookup by blood group & area, 1-click phone call & WhatsApp, emergency blood request system, donor directory, dashboard. Status: **Live** (`https://roktofinder.com`).
    - **JaniBD:** Bangla-first SaaS-style platform. Tagline: *"Your everyday digital companion."* Features: everyday utility tools, quizzes & games, learning library, Bangladesh discovery guide, Tech Skill Map, shareable progress cards, public profiles. Status: **In development (NOT live)**.
-   - **DesignAngle:** Web design and development agency founded by Muhammad Nafiz. Link: `https://designangle.xyz` (flagged as temporary link).
+   - **Global SaaS:** International SaaS platform currently in active development. Features: scalable SaaS architecture, global market focus, high performance and modern API layer. Status: **In development (NOT live)**. Official name and branding to be announced upon release.
 3. **AI Learning Roadmap Facts Only:**
    - Python and Machine Learning fundamentals: **Completed**.
    - Deep Learning: **Currently learning / In progress**.
